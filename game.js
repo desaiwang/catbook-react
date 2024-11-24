@@ -10,7 +10,7 @@ const main = () => {
 setInterval(main, 1000 / SNAKE_SPEED);
 
 const update = () => {
-  console.log("Updating");
+  console.log("snake", snakeBody);
   updateSnake();
   // TODO 3.3: Update the food
   updateFood();

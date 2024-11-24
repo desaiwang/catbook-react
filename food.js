@@ -1,10 +1,11 @@
 // TODO 3.1: Create the food
-let food = { x: 2, y: 2 };
+let food = randomGridPosition();
 
 // TODO 3.2: Create a function to update the food
 const updateFood = () => {
   if (onSnake(food)) {
     food = getNewFoodPosition();
+    growSnake();
   }
 };
 
