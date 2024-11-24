@@ -10,16 +10,16 @@
 window.addEventListener("keydown", (e) => {
   // console.log(e.key);
 
-  if (e.key == "ArrowUp") {
+  if (e.key == "ArrowUp" && xDir !== 0) {
     xDir = 0;
     yDir = -1;
-  } else if (e.key == "ArrowDown") {
+  } else if (e.key == "ArrowDown" && xDir !== 0) {
     xDir = 0;
     yDir = 1;
-  } else if (e.key == "ArrowRight") {
+  } else if (e.key == "ArrowRight" && yDir !== 0) {
     xDir = 1;
     yDir = 0;
-  } else if (e.key == "ArrowLeft") {
+  } else if (e.key == "ArrowLeft" && yDir !== 0) {
     xDir = -1;
     yDir = 0;
   }
